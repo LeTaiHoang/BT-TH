@@ -6,22 +6,64 @@
 </head>
 <body>
 <div>
-    <input type="text"><button>Create</button>
-    <input type="text"> <button>Search</button>
+    <input type="text" >
+            <button onclick="createStudent()">Create</button>
+            <input type="text">
+            <button>Search</button>
 </div>
 <div id="table">
     <table border="1">
-       <tr>
-           <th rowspan="4">STUDENMANAGE</th>
-           <th>STT</th>
-           <th>NAME</th>
-           <th>EDIT</th>
-           <th>DELETE</th>
-       </tr>
+        <thead>
+        <tr>
+            <th>STT</th>
+            <th>NAME</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+        </tr>
+        </thead>
+        <tbody>
+
+<script>
+    function createStudent(){
+        if ()
+        alert()
+    }
+    let studentList = []
+    for (let i = 0; i < 3; i++) {
+        main = {
+            'fullName': 'H' + i,
+            'EDIT': 'Edit' + i,
+            'DELETE': 'Delete' + i
+        };
+        studentList.push(main)
+    }
+
+    for (let i = 0; i < studentList.length; i++) {
+        document.writeln(`
+            <tr>
+            <td>${i+1}</td>
+            <td>Ngân</td>
+            <td>${studentList.EDIT}</td>
+            <td>${studentList.DELETE}</td>
+            </tr>`)
+
+    }
+</script>
+        </tbody>
     </table>
 </div>
-<script>
 
-</script>
+<!--<div>-->
+<!--        <input type="text" >-->
+<!--        <button onclick="createStudent()">Create</button>-->
+<!--        <input type="text">-->
+<!--        <button>Search</button>-->
+<!--</div>-->
+<!--<script>-->
+<!--    function createStudent(){-->
+<!--        alert('Tên học sinh là: '+value);-->
+<!--</script>-->
+
+
 </body>
 </html>
